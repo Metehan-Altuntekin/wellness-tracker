@@ -5,13 +5,13 @@
 <!-- TODO (Burak) proper styling of this header as a fixed nav at the top of the screen -->
 
 <header class="flex w-full px-3 justify-between items-center py-2 rounded-b-3xl bg-base-300">
-	<button class="btn rounded-2xl">
-		<Icon icon="line-md:chevron-left" />
+	<button class="btn rounded-2xl h-12 w-12">
+		<Icon icon="line-md:chevron-left" style="font-size: 36px" />
 	</button>
 
 	<div class="text-xl font-bold">Today</div>
 
-	<button class="btn rounded-2xl">
+	<button class="btn rounded-2xl h-12 w-12">
 		<Icon icon="line-md:chevron-right" />
 	</button>
 </header>
