@@ -1,3 +1,37 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 @plugin "daisyui";
+
+@font-face {
+	font-family: 'MavenPro';
+	src: url('/fonts/MavenPro/MavenPro-VariableFont_wght.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@theme {
+	--font-display: 'MavenPro', sans-serif;
+}
+
+@layer base {
+	/* @font-face {
+		font-family: 'MavenPro';
+		src:
+			local('MavenPro'), local('MavenPro'), local('lobster two'), local('MavenPro'),
+			url('/fonts/MavenPro/MavenPro-VariableFont_wght.woff2');
+		font-weight: normal;
+		font-display: swap;
+	} */
+
+	@font-face {
+		font-family: MavenPro;
+		font-style: normal;
+		font-weight: normal;
+		font-display: swap;
+		src: url('/fonts/MavenPro/MavenPro-VariableFont_wght.woff2') format('woff2');
+	}
+}
+
+@theme {
+	--font-display: 'MavenPro', sans-serif;
+}
