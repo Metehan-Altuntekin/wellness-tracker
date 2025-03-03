@@ -2,5 +2,5 @@
 </script>
 
 <main class="">
-	<h1>DAY</h1>
+	<h1>DATABASE</h1>
 </main>

@@ -13,7 +13,7 @@
 	<div class="w-full h-12 bg-base-300"></div>
 	<Header />
 
-	<main class="flex-1 overflow-y-auto w-full bg-red-300">
+	<main class="flex-1 overflow-y-auto w-full">
 		{@render children()}
 	</main>
 
