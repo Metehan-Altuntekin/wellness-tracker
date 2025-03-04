@@ -29,16 +29,14 @@
 	];
 </script>
 
-<!-- TODO (Burak) proper styling of this nav bar as a fixed nav at the bottom of the screen -->
-
 <nav class="flex bg-base-300 w-full py-3 items-center justify-center gap-3 rounded-t-3xl">
 	{#each navItems as { icon, tooltip, link }}
-	<a
-	href={link}
-	class="btn rounded-2xl h-12 w-12 transition-all duration-200
-		{($page.url.pathname === link) ? 'bg-white text-red-500 shadow-lg' : ''}"
->
-	<Icon {icon} class="block h-40 w-40"/>
-</a>
+		<a
+			href={link}
+			class="btn btn-square btn-lg rounded-2xl transition-all duration-200
+						{$page.url.pathname === link ? 'bg-white text-red-500 shadow-lg' : ''}"
+		>
+			<Icon {icon} class="w-6 h-6" />
+		</a>
 	{/each}
 </nav>

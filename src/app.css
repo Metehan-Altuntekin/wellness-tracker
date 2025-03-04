@@ -2,6 +2,9 @@
 @plugin '@tailwindcss/typography';
 @plugin "daisyui";
 
+/* TODO tidy this mess up */
+/* TODO font weight should be something like 100 - 1000 for variable fonts, fix that after tidying the mess (otherwise font weight will always be 400) */
+
 @font-face {
 	font-family: 'MavenPro';
 	src: url('/fonts/MavenPro/MavenPro-VariableFont_wght.woff2') format('woff2');
