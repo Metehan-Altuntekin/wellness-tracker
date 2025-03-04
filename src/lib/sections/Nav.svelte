@@ -1,9 +1,7 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 
-	import { page } from '$app/stores';
-	export let title = 'Default Title';
-	export let href = '/app/today';
+	import { page } from '$app/state';
 
 	let navItems = [
 		{
@@ -34,7 +32,7 @@
 		<a
 			href={link}
 			class="btn btn-square btn-lg rounded-2xl transition-all duration-200
-						{$page.url.pathname === link ? 'bg-white text-red-500 shadow-lg' : ''}"
+						{page.url.pathname === link ? 'bg-white text-red-500 shadow-lg' : ''}"
 		>
 			<Icon {icon} class="w-6 h-6" />
 		</a>
